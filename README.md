@@ -28,7 +28,3 @@ Provided is an example application that can:
 This example is meant to be forked imported to a separate repo for personal development for quick and clean BLE bring-up 
 testing. Simply copy the `nordic_central_ble_wrapper` Python package to your project and build the service and 
 characteristic classes you need for your application.
-
-This is free to use, no license, I don't care what you do with it. Though you must adhere to the
-[pc-ble-driver-py license](https://github.com/NordicSemiconductor/pc-ble-driver-py/blob/master/LICENSE).
-I bare no responsibility for your mistakes in using this code...but you should because it's lovely :kissing_heart:
