@@ -13,18 +13,16 @@ from typing import TYPE_CHECKING
 from pc_ble_driver_py import ble_driver as NordicDriver
 
 if TYPE_CHECKING:
-  from central_ble_driver import CentralBleDriver
-  from characteristic import Characteristic
+    from central_ble_driver import CentralBleDriver
+    from characteristic import Characteristic
 
 
 class Service:
-  """Service interface for handling different characteristics per service
-  """
+    """Service interface for handling different characteristics per service"""
 
-  uuid = None                 # type: (NordicDriver.BLEUUID | None)
-  characteristics = dict()    # type: dict[NordicDriver.BLEUUID, Characteristic]
+    uuid = None  # type: (NordicDriver.BLEUUID | None)
+    characteristics = dict()  # type: dict[NordicDriver.BLEUUID, Characteristic]
 
-  def __init__(self, nrf: CentralBleDriver) -> None:
-    self.nrf = nrf
-    self.logger = logging.getLogger(self.__class__.__name__)
-
+    def __init__(self, nrf: CentralBleDriver) -> None:
+        self.nrf = nrf
+        self.logger = logging.getLogger(self.__class__.__name__)
